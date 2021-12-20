@@ -1,6 +1,10 @@
 .signin {
   width: 500px;
   margin: 0 auto;
+
+  &-buttons {
+    text-align: center;
+  }
   input {
     width: 100%;
   }
