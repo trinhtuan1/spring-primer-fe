@@ -1,10 +1,11 @@
 import { Button, Form, Input } from "antd";
 import React from "react";
+import { SigninFormModel } from "../models/AuthModel";
 
 const SignIn = () => {
   const [form] = Form.useForm();
 
-  const onFinish = (values: any) => {
+  const onFinish = (values: SigninFormModel) => {
     console.log(values);
   };
 
