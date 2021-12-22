@@ -1,9 +1,11 @@
 import { Button, Form, Input } from "antd";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { SigninFormModel } from "../models/AuthModel";
 
 const SignIn = () => {
   const [form] = Form.useForm();
+  const navigate = useNavigate();
 
   const onFinish = (values: SigninFormModel) => {
     console.log(values);
@@ -24,7 +26,9 @@ const SignIn = () => {
             <Button htmlType="submit" type="primary">
               Login
             </Button>
-            <Button type="link">Signup</Button>
+            <Button type="link" onClick={() => navigate("/signup")}>
+              Signup
+            </Button>
           </div>
         </Form>
       </div>

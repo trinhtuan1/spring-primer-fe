@@ -17,7 +17,12 @@ const SignUp = () => {
   return (
     <div className="signup">
       <h1 className="text-center">User Signup</h1>
-      <Form form={form} onFinish={onFinish}>
+      <Form
+        form={form}
+        onFinish={onFinish}
+        labelCol={{ span: 4 }}
+        wrapperCol={{ span: 20 }}
+      >
         <Form.Item label="User ID" name="userId">
           <Input />
         </Form.Item>
